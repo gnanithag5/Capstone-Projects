@@ -1,5 +1,5 @@
 Flask==2.2.5
-requests==2.31.0
+requests==2.32.2
 gunicorn==23.0.0  # Required if deploying to platforms like Heroku
 numpy==1.26.4
 ibm-watson==6.0.0  # If using IBM Watson's NLP API
