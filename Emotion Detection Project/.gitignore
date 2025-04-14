@@ -1,0 +1,43 @@
+# Ignore environment variable files
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Flask-related files
+instance/
+*.db
+*.sqlite3
+
+# VS Code settings
+.vscode/
+
+# Jupyter Notebook checkpoints (if any)
+.ipynb_checkpoints/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Logs
+*.log
+
+# Pytest cache
+.pytest_cache/
+
+# HTML/JS temporary build files (if using any frontend tools)
+build/
+dist/
+node_modules/
