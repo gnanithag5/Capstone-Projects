@@ -8,17 +8,6 @@ This project demonstrates a simplified **Extract, Transform, Load (ETL)** proces
 
 Furthermore, the project includes the generation of weekly statistics, providing a higher-level summary of the forecast performance over time.
 
-## Project Breakdown
-
-The project is divided into the following key exercises:
-
-1.  **Initialize Weather Report Log File:** Setting up a log file (`rx_poc.log`) to store daily weather data, including observed and forecasted temperatures.
-2.  **Download Raw Weather Data:** Downloading synthetic weather data containing both forecasted and observed temperatures.
-3.  **Extract and Load Data:** Parsing the downloaded data to extract relevant forecast and observed temperatures for further processing.
-4.  **Schedule Bash Script (`rx_poc.sh`):** Scheduling a script to run daily at noon local time to automatically gather the latest weather data.
-5.  **Create Script for Historical Forecasting Accuracy (`fc_accuracy.sh`):** Developing a script to calculate the daily forecast accuracy by comparing forecasted and observed temperatures. The accuracy is categorized into different ranges (excellent, good, fair, poor), and the results are appended to a historical report file (`historical_fc_accuracy.tsv`).
-6.  **Generate Weekly Statistics of Historical Forecasting Accuracy (`weekly_stats.sh`):** Analyzing a synthetic historical forecasting accuracy dataset to extract the last 7 days of data, calculate the minimum and maximum absolute forecast errors, and display these weekly statistics.
-
 ## Scripts
 
 The following Bash scripts are part of this project:
@@ -57,3 +46,11 @@ To get started with this project, you will need to:
 
 Further steps will involve downloading weather data, implementing the `rx_poc.sh` and `fc_accuracy.sh` scripts, scheduling the daily execution, and finally developing the `weekly_stats.sh` script to analyze the historical accuracy data.
 
+## Scheduling the Daily Weather Data Collection (`rx_poc.sh`)
+
+To automate the daily collection of weather data using the `rx_poc.sh` script, you can use a scheduling tool like `cron` on Linux or macOS.
+
+**To set up a cron job to run `rx_poc.sh` daily at noon (12:00 PM) local time, you can add the following line to your crontab:**
+
+```cron
+0 12 * * * /path/to/your/rx_poc.sh
