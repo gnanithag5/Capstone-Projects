@@ -2,7 +2,7 @@
 
 This project automates the ETL (Extract, Transform, Load) process for toll data collected from various highway operators. The data, arriving in multiple formats, is consolidated into a clean CSV file for analysis.
 
----
+
 
 ## Features
 
@@ -14,7 +14,7 @@ This project automates the ETL (Extract, Transform, Load) process for toll data 
 * **Consolidates** all extracted data into a single, unified CSV file.
 * **Capitalizes** vehicle types within the final output file for consistency.
 
----
+
 
 ## Getting Started
 
@@ -63,7 +63,7 @@ Before you begin, ensure you have the following installed:
     ./scripts/submitdag.sh
     ```
 
----
+
 
 ## Accessing the Airflow UI
 
