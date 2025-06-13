@@ -1,0 +1,8 @@
+# Airflow logs and DB
+logs/
+airflow.db
+__pycache__/
+*.pyc
+.env
+*.sqlite
+dags/__pycache__/
