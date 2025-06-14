@@ -2,7 +2,7 @@
 
 This project simulates toll booth vehicle traffic using a **Kafka-based streaming data pipeline** and stores that data into a **MySQL database**. It's designed for local execution and structured for easy deployment on GitHub.
 
----
+
 
 ### Project Overview
 
