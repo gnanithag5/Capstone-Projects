@@ -1,2 +1,2 @@
 kafka-python
-mysql-connector-python==8.0.31
+mysql-connector-python==9.1.0
